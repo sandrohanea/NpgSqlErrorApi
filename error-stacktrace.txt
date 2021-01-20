@@ -1,0 +1,715 @@
+2021-01-20T18:34:46.120127128Z Before configuring
+2021-01-20T18:34:46.698622789Z crit: Microsoft.AspNetCore.Hosting.Diagnostics[6]
+2021-01-20T18:34:46.698666789Z Application startup exception
+2021-01-20T18:34:46.698674289Z System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:46.698846289Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:46.698896389Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.698905789Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699005389Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699193990Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699207290Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699316190Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699456590Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699469290Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699612190Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699633090Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699640590Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699774990Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.699787290Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:46.699793590Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:46.699963791Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:46.699976891Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:46.700009591Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:46.700054391Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700206791Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700218891Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700271391Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700367991Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700519791Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700531591Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700567491Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700700292Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700712292Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700808592Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700820492Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.700826892Z --- End of inner exception stack trace ---
+2021-01-20T18:34:46.700865692Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:46.700873792Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:46.700954992Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:46.701069892Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:46.701112292Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:46.701255092Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:46.701267492Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:46.701300092Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:46.701308992Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.701387092Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.701567293Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.701579493Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.701687693Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.701824393Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.701836793Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.701991493Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.702003093Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:46.702009093Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:46.702073893Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.702083493Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.702125893Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.702280394Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.702292294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.702298194Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.702421694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.702553894Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.702566994Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.702769994Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.702782994Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.702929694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.703082195Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.703212395Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.703224395Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.703260795Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.703411295Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.703422895Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.703429395Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.703578595Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.703591495Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.703743496Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.703879196Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.703993696Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.704005996Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.704154696Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.704166396Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.704172896Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.704270496Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.704282696Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:46.704288796Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:46.704449596Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:46.704460997Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:46.704467397Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.704531397Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.704540697Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.704569297Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.704717797Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.704729897Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.704849397Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.704869197Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.704994997Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.705007397Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.705145997Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.705165997Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.705173197Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.705284098Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.705296198Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:46.705435398Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:46.705447098Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:46.705452798Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:46.705491998Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:46.705591998Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:46.705604398Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:46.705759898Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:46.705777998Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:46.705784498Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:46.705807398Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:46.705840998Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:46.705852898Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:46.706021699Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:46.706033699Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:46.706039999Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:46.706045999Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:46.706051799Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:46.721932519Z Unhandled exception. System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:46.721957220Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:46.721963620Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.721969220Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.721975120Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.721980820Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.721986320Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.721991820Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722000620Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722016920Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722023220Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722028720Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722034120Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722040320Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722046120Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:46.722051320Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:46.722056320Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:46.722061320Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:46.722066220Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:46.722071120Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722076720Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722082220Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722087820Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722093420Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722098920Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722104520Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722126420Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722133420Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722143920Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722150120Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722169620Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:46.722175520Z --- End of inner exception stack trace ---
+2021-01-20T18:34:46.722180620Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:46.722185620Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:46.722190620Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:46.722196120Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:46.722201820Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:46.722207520Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:46.722213420Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:46.722218720Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:46.722225020Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722230520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722236220Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722241720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722247020Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722252320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722262220Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.722268420Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.722273920Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:46.722279320Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:46.722284920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722290320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722295720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722301820Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722307520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722312920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722318320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722323520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722329320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722334820Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722340120Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722345520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722350820Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722360320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722366420Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722372220Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722377820Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722383320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722389120Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722394520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722399920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722405320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722410720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722416320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722421720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722427020Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722432320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722438320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.722443720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.722449020Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:46.722454320Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:46.722463220Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:46.722468820Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:46.722474320Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722498120Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722503920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722509920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722515520Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722520920Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722526420Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722531720Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:46.722538420Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:46.722544220Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:46.722549620Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722555020Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:46.722560620Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:46.722566020Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:46.722571220Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:46.722576620Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:46.722586420Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:46.722592020Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:46.722597120Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:46.722602620Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:46.722608220Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:46.722613520Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:46.722618720Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:46.722624520Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:46.722630020Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:46.722635320Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:46.722640620Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:46.722645820Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:46.722651220Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:46.722656820Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:46.722662420Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:46.722667820Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:46.722672920Z at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:46.722678020Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:46.722683120Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:46.722688320Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+2021-01-20T18:34:46.722693520Z at NpgSqlErrorApi.Program.Main(String[] args) in /src/NpgSqlErrorApi/Program.cs:line 16
+2021-01-20T18:34:54.802883141Z Before configuring
+2021-01-20T18:34:55.876177951Z crit: Microsoft.AspNetCore.Hosting.Diagnostics[6]
+2021-01-20T18:34:55.876244851Z Application startup exception
+2021-01-20T18:34:55.876259051Z System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:55.876270851Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:55.876282451Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876294251Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876305751Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876317551Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876328951Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876340451Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876352051Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876363351Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876374651Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876388551Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876400751Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876412251Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876423651Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:55.876434451Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:55.876445551Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:55.876455951Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:55.876493751Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:55.876506151Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876517951Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876529651Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876541151Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876552751Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876564251Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876575651Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876588151Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876600351Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876611951Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876623451Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876634851Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.876646351Z --- End of inner exception stack trace ---
+2021-01-20T18:34:55.876656751Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:55.876666951Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:55.876677251Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:55.876688451Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:55.876708751Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:55.876721952Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:55.876735952Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:55.876747452Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:55.876758552Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876769552Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.876781352Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.876792552Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876803752Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.876814752Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.876826752Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.876837952Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.876848752Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:55.876859652Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:55.876872352Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.876883952Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876902452Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.876915752Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.876927352Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876938352Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.876949952Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876961052Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.876972852Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.876984152Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.876995252Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877006652Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877018952Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.877031452Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877043052Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877054052Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877065552Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877076652Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.877088552Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877597553Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877647453Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877676353Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877696553Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.877716653Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877737653Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877756953Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.877779653Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.877805053Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.877829453Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.877852353Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:55.877875053Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:55.877896953Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:55.877918153Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:55.877946753Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.877972853Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.877995053Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.878016153Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.878058853Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.878081153Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.878099753Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.878119753Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.878142253Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.878162953Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.878181353Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.878204353Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.878225453Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.878244454Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.878263254Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:55.878282754Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:55.878301654Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:55.878319154Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:55.878338754Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:55.878359154Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:55.878378754Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:55.878398254Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:55.878434154Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:55.878456054Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:55.878529154Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:55.878563854Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:55.878582954Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:55.878605154Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:55.878624954Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:55.878644154Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:55.878667154Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:55.878687954Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:55.899547581Z Before configuring
+2021-01-20T18:34:55.908083593Z Unhandled exception. System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:55.908135393Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:55.908149393Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908161593Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908173293Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908184993Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908196293Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908207493Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908218593Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908250893Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908264093Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908275593Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908286993Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908300393Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908316593Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:55.908327493Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:55.908337893Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:55.908347993Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:55.908358293Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:55.908368693Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908380093Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908391593Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908402993Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908414293Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908425693Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908437193Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908448593Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908460993Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908481393Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908494093Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908505593Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:55.908517193Z --- End of inner exception stack trace ---
+2021-01-20T18:34:55.908527293Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:55.908537293Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:55.908547393Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:55.908558293Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:55.908569893Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:55.908581693Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:55.908594093Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:55.908605293Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:55.908617593Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908629093Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.908640993Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908652393Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908672093Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.908698794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.908724394Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.908736794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.908747694Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:55.908758794Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:55.908770494Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908781794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908792794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.908805794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908817794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908828694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908839794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908850794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.908862494Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908873794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908884494Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908895594Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908906494Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.908925494Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908937794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908949794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908961294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.908972894Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.908984694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.908995794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909006794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909018094Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909029094Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.909040694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909051894Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909062794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.909073694Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.909085994Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.909097294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.909108094Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:55.909125894Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:55.909137194Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:55.909147794Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:55.909159094Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909170294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909181294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.909193094Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909204294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909215194Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909226394Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909237294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:55.909250594Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:55.909262294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:55.909273294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.909284294Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:55.909295794Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:55.909306894Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:55.909317594Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:55.909328494Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:55.909346294Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:55.909357594Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:55.909367794Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:55.909379194Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:55.909390494Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:55.909401494Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:55.909412094Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:55.909423994Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:55.909435194Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:55.909446294Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:55.909457294Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:55.909467895Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:55.909479295Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:55.909490595Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:55.909502695Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:55.909513995Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:55.909524695Z at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:55.909535195Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:55.909545895Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:55.909556595Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+2021-01-20T18:34:55.909566995Z at NpgSqlErrorApi.Program.Main(String[] args) in /src/NpgSqlErrorApi/Program.cs:line 16
+2021-01-20T18:34:56.967530384Z crit: Microsoft.AspNetCore.Hosting.Diagnostics[6]
+2021-01-20T18:34:56.967598884Z Application startup exception
+2021-01-20T18:34:56.967614584Z System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:56.967628584Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:56.967642884Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967660784Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967675884Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967714684Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967729684Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967743884Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967758184Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967772184Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967787084Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967803484Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967817784Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967831984Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967845885Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:56.967858985Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:56.967871485Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:56.967884385Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:56.967921785Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:56.967935285Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967948785Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967961785Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967974785Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.967988085Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968001285Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968014585Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968028785Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968041985Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968055185Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968068285Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968081485Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.968094485Z --- End of inner exception stack trace ---
+2021-01-20T18:34:56.968106185Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:56.968117885Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:56.968129685Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:56.968142285Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:56.968164885Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:56.968179185Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:56.968194985Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:56.968207585Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:56.968228185Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968241085Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968254585Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968267785Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968280185Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968292985Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968306485Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.968319285Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.968331385Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:56.968343885Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:56.968358085Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968370785Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968391585Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968406185Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968419185Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968431885Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968445085Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968457785Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968471585Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968484385Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968496885Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968509885Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968523185Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968536785Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968549585Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968561985Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968579385Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968591885Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968605486Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968625786Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968638986Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968655386Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968669186Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968683886Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968696786Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968709086Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968721486Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968735086Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.968747786Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.968759986Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:56.968772086Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:56.968783586Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:56.968795186Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:56.968807986Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968820486Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968832886Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968846086Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968868686Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968882786Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968895886Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968908286Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.968921886Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.968934486Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.968946986Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968959386Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.968972486Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.968984986Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.968997086Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:56.969009286Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:56.969021386Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:56.969032986Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:56.969045886Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:56.969059186Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:56.969072486Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:56.969084786Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:56.969104586Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:56.969117286Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:56.969129586Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:56.969141886Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:56.969154486Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:56.969166186Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:56.969178886Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:56.969191486Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:56.969204586Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:56.969217186Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:56.990118314Z Unhandled exception. System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception.
+2021-01-20T18:34:56.990189114Z ---> System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+2021-01-20T18:34:56.990203914Z Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990215114Z Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990225714Z Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990262914Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990275414Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990285714Z Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990295714Z Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990352314Z Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990366114Z Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990376414Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990387514Z Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990399614Z Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990410014Z at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+2021-01-20T18:34:56.990443914Z at System.Reflection.RuntimeModule.GetTypes()
+2021-01-20T18:34:56.990453714Z at System.Reflection.Assembly.GetTypes()
+2021-01-20T18:34:56.990462814Z at Npgsql.TypeMapping.GlobalTypeMapper.SetupGlobalTypeMapper()
+2021-01-20T18:34:56.990471914Z at Npgsql.TypeMapping.GlobalTypeMapper..cctor()
+2021-01-20T18:34:56.990536514Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.BeginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990548514Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.CommitMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990558914Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.FullDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990569214Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990579114Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990615514Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.InsertMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990628814Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990639314Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.OriginMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990719115Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.RelationMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990749715Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TruncateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990761215Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.TypeMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990771615Z System.TypeLoadException: Could not load type 'Npgsql.Replication.PgOutput.Messages.UpdateMessage' from assembly 'Npgsql, Version=5.0.2.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7'.
+2021-01-20T18:34:56.990815015Z --- End of inner exception stack trace ---
+2021-01-20T18:34:56.990824715Z at Npgsql.TypeMapping.GlobalTypeMapper.get_Instance()
+2021-01-20T18:34:56.990833815Z at Npgsql.NpgsqlParameter.set_DbType(DbType value)
+2021-01-20T18:34:56.990843015Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping.GenerateNpgsqlDbType(RelationalTypeMapping subtypeMapping)
+2021-01-20T18:34:56.990852915Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, String storeTypeSchema, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:56.990863315Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping..ctor(String storeType, Type clrType, RelationalTypeMapping subtypeMapping, ISqlGenerationHelper sqlGenerationHelper)
+2021-01-20T18:34:56.990902815Z at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource..ctor(TypeMappingSourceDependencies dependencies, RelationalTypeMappingSourceDependencies relationalDependencies, ISqlGenerationHelper sqlGenerationHelper, INpgsqlOptions npgsqlOptions)
+2021-01-20T18:34:56.990914115Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:56.990924215Z at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:56.990935615Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.990945815Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.990978115Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.990990515Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991000215Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.991010015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.991028715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.991070315Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.991082515Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:56.991092415Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.<>c.<TryAddCoreServices>b__3_0(IServiceProvider p)
+2021-01-20T18:34:56.991102615Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991112415Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991122015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.991159015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991171615Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991181715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991191715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991201415Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.991211715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991247715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991259715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991269815Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991279315Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.991297015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991334015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991347615Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991358015Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991367715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.991377915Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991387715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991422615Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991435715Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991445816Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.991456216Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991466016Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991475616Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.991510116Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.991523816Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.991534116Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.991543616Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+2021-01-20T18:34:56.991560816Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+2021-01-20T18:34:56.991596816Z at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2021-01-20T18:34:56.991609516Z at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+2021-01-20T18:34:56.991619816Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.991629616Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.991639116Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.992508217Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.992527817Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.992538417Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.992548617Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.992590517Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2021-01-20T18:34:56.992605017Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+2021-01-20T18:34:56.992616017Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2021-01-20T18:34:56.992626117Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.992636117Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2021-01-20T18:34:56.992717217Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+2021-01-20T18:34:56.992731717Z at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2021-01-20T18:34:56.992742217Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2021-01-20T18:34:56.992752417Z at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2021-01-20T18:34:56.992806617Z at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2021-01-20T18:34:56.992819217Z at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2021-01-20T18:34:56.992829017Z at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:56.992839417Z at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2021-01-20T18:34:56.992849717Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+2021-01-20T18:34:56.992890317Z at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+2021-01-20T18:34:56.992903817Z at NpgSqlErrorApi.Startup.ConfigureDatabase(IApplicationBuilder app) in /src/NpgSqlErrorApi/Startup.cs:line 63
+2021-01-20T18:34:56.992915917Z at NpgSqlErrorApi.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /src/NpgSqlErrorApi/Startup.cs:line 55
+2021-01-20T18:34:56.992926117Z at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+2021-01-20T18:34:56.992935817Z at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+2021-01-20T18:34:56.992945917Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+2021-01-20T18:34:56.992981918Z at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+2021-01-20T18:34:56.992994218Z at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+2021-01-20T18:34:56.993004418Z at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+2021-01-20T18:34:56.993015318Z at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+2021-01-20T18:34:56.993025518Z at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:56.993035018Z at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2021-01-20T18:34:56.993071218Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:56.993082318Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+2021-01-20T18:34:56.993092118Z at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+2021-01-20T18:34:56.993101618Z at NpgSqlErrorApi.Program.Main(String[] args) in /src/NpgSqlErrorApi/Program.cs:line 16
+2021-01-20T18:35:04.902928499Z Before configuring
